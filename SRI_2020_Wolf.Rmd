@@ -1,0 +1,138 @@
+---
+title: Methods to Quantify the Genetic Architecture of Cervical Length
+knit: pagedown::chrome_print
+
+#Poster Specifications:
+  
+poster_height:	"36in"
+poster_width:	"54in"
+column_padding: "2cm"
+
+primary_colour: "royalblue"
+secondary_colour: "#00acee"
+accent_colour: "royalblue"
+
+font_family: "Lato"
+titletext_fontfamily: "Lato"
+main_fontfamily: "Lato"
+
+title_textsize: "75pt"
+author_textsize: "45pt"
+authorextra_textsize: "35pt"
+affiliation_textsize: "25pt"
+main_textsize: "120pt"
+body_textsize: "44pt"
+
+#Authors:
+  
+author:
+  - name: Hope M. Wolf
+    affil: 1
+    twitter: hopemwolf
+    email: wolfhm@vcu.edu
+    orcid: 0000-0003-0888-5272
+    main: true
+  - name: Roberto Romero
+    affil: 2
+  - name: Jerome F. Strauss, III
+    affil: 1, 3
+  - name: Sonia S. Hassan
+    affil: 4, 5
+  - name: Shawn J. Latendresse
+    affil: 6
+  - name: Bradley T. Webb
+    affil: 7
+  - name: Aaron R. Wolen
+    affil: 8
+  - name: Adi L. Tarca
+    affil: 2, 5
+  - name: Chaur-Dong Hsu
+    affil: 2, 5
+  - name: Timothy P. York, PhD
+    affil: 1, 3
+    
+#Affiliations:
+
+affiliation:
+  - num: 1
+    address: Dept. of Human and Molecular Genetics, Virginia Commonwealth University
+  - num: 2
+    address: Perinatology Research Branch, Division of Obstetrics and Maternal-Fetal Medicine, Division of Intramural Research, Eunice Kennedy Shriver National Institute of Child Health and Human Development, National Institutes of Health, U.S. Deptartment of Health & Human Services
+  - num: 3
+    address: Dept. of Obstetrics and Gynecology, Virginia Commonwealth University
+  - num: 4
+    address: Office of Women’s Health, Wayne State University
+  - num: 5
+    address: Deptartment of Obstetrics and Gynecology, Wayne State University
+  - num: 6
+    address: Deptartment of Psychology and Neuroscience, Baylor Univeristy
+  - num: 7
+    address: Deptartment of Psychiatry, Virginia Commonwealth University
+  - num: 8
+    address: Deptartment of Surgery, University of Tennessee Health Science Center
+
+#Main Findings and Figures:
+
+main_findings:
+  - "What is the **genetic relationship** between **cervical length** and **gestational age** at delivery?"
+  - '![](CL_Plot.jpg){.main_pic width=90%}'
+logoleft_name: '![](OSF_QR.jpg){.main-img-left width=15%}'
+logoright_name: '![](Twitter_QR.jpeg){.main-img-right width=15%}'
+logoleft_npicwidth: "50%"
+
+#Output:
+
+output: 
+  posterdown::posterdown_betterland:
+    self_contained: false
+    pandoc_args: --mathjax
+    highlight: haddock
+    number_sections: false
+    
+
+
+---
+
+```{r, include=FALSE}
+knitr::opts_chunk$set(results = 'asis',
+                      echo = FALSE,
+                      warning = FALSE,
+                      tidy = FALSE,
+                      message = FALSE,
+                      fig.align = 'left',
+                      out.width = "100%")
+options(knitr.table.format = "html")
+```
+
+
+## Background
+
+* A **short cervix** in the midtrimester is a **powerful predictor** of spontaneous preterm delivery.
+
+* The **rate of change** in cervical length is also associated with increased risk for sPTD, **independent** of the baseline measurement. 
+
+* How much of the **variation** in cervical length and cervical shortening is attributable to **genetic factors**?
+
+* Do the **same genes** influence **cervical change** and **gestational age** at delivery?
+
+
+## Methods
+
+* Cervical change across pregnancy modeled as a **latent growth curve** in MPlus.
+
+* Longitudinal cervical length data from **>5,000** women with a singleton pregnancy
+
+* Cervical length measured via TVU and gestational age at delivery measured from LMP and confirmed by ultrasound
+
+## Conceptual Model
+
+```{r, eval = TRUE, overlap-fig, out.width = "90%", fig.align="center"}
+knitr::include_graphics("Proposal_Aims.jpg")
+```
+
+
+## Discussion
+
+* Estimate the **genetic contribution** to cervical change and its role **mediating** timing of birth
+
+* Understand the **pathophysiology** of a **short cervix** and its association with sPTB
